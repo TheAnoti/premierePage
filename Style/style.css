@@ -1,0 +1,24 @@
+h3, h4{
+    color: indigo;
+    font-size: 25px;
+}
+body {
+    background-color: lightseagreen;
+}
+#spidy {
+    width: 20%;
+}
+#coordonnees {
+    width: 50vw;
+    background-color: blueviolet;
+    border: black 10px;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 10px 10px 5px 10px;
+    transition: transform 2s;
+}
+#coordonnees:hover {
+    background-color: darkorchid;
+    transform: translate3d(10px, 10px, 0);
+    transition: 1ms;
+}
