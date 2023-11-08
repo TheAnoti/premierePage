@@ -7,6 +7,7 @@ body {
 }
 #spidy {
     width: 20%;
+    margin-inline: 37%;
 }
 #coordonnees {
     width: 50vw;
@@ -14,11 +15,12 @@ body {
     border: black 10px;
     border-radius: 15px;
     padding: 10px;
-    box-shadow: 10px 10px 5px 10px;
-    transition: transform 2s;
+    box-shadow: 2px 2px 5px 3px;
+    transition: transform 8ms;
+    margin-inline: 24%;
 }
 #coordonnees:hover {
     background-color: darkorchid;
     transform: translate3d(10px, 10px, 0);
-    transition: 1ms;
+    transition: 8ms;
 }
