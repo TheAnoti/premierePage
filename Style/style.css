@@ -1,26 +1,66 @@
-h3, h4{
-    color: indigo;
-    font-size: 25px;
+@font-face {
+    font-family:"Roadrage";
+    src: url("../Assets/Road_Rage.otf");
+
 }
-body {
-    background-color: lightseagreen;
+
+@font-face {
+    font-family:"Haloa";
+    src: url("../Assets/HawaiiLover.ttf");
 }
-#spidy {
-    width: 20%;
-    margin-inline: 37%;
+@font-face {
+    font-family: "londonpow";
+    src: url("../Assets/OldLondon.ttf");
 }
-#coordonnees {
-    width: 50vw;
-    background-color: blueviolet;
-    border: black 10px;
-    border-radius: 15px;
-    padding: 10px;
-    box-shadow: 2px 2px 5px 3px;
-    transition: transform 8ms;
-    margin-inline: 24%;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-#coordonnees:hover {
-    background-color: darkorchid;
-    transform: translate3d(10px, 10px, 0);
-    transition: 8ms;
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 25vh;
+    background-color: darkblue;
+    color: antiquewhite;
+    font-family: "Roadrage";
+    background-image:url("../Assets/blackandblue.jpg");/*ajouter une image en fond*/
+    background-position: center;/*centrer la position de l'image*/
+    background-repeat: no-repeat;/* gerer la repétition de l'image*/
+}
+header>h1{
+    font-size: 14vh;
+    font-family:"Haloa";
+}
+header>h2{
+    font-size: 3vh;
+}
+nav {
+    /*taille et apparence du nav (menu)*/
+    height: 75vh;
+    width: 25vh;
+    background-color: black;
+    /*reglage des bouton.*/
+    flex-direction: column;
+}
+.button {
+    /*formatage du texte*/
+    color: antiquewhite;
+    text-decoration: none;
+    font-family:"londonpow";
+    font-size: 4vh;
+    display: block;
+    background-color: darkred;
+    border-radius: 1vh;
+    padding: 0.5vh;
+    width: 12vw;
+    text-align: center;
+}
+button:hover {
+    background-color: darkblue;
+    box-shadow: color white 5px 5px 5px 2px;
+    transition: 230ms;
 }
