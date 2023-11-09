@@ -44,7 +44,10 @@ nav {
     width: 25vh;
     background-color: black;
     /*reglage des bouton.*/
+    display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 .button {
     /*formatage du texte*/
@@ -54,13 +57,14 @@ nav {
     font-size: 4vh;
     display: block;
     background-color: darkred;
-    border-radius: 1vh;
+    border-radius: 0.5vh;
     padding: 0.5vh;
-    width: 12vw;
-    text-align: center;
+    width: 15vh;
+    transition:box-shadow 800ms;
 }
-button:hover {
-    background-color: darkblue;
-    box-shadow: color white 5px 5px 5px 2px;
-    transition: 230ms;
+.button:hover {
+    background-color: darkorchid;
+    transition: 800ms;
+    box-shadow: 5px 5px 10px 0;
+    transform: translate3d(5px, 5px, 2px);
 }
