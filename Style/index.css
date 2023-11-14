@@ -1,0 +1,33 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background: linear-gradient(to right, black,rgb(93, 93, 93));
+    padding-top: 5vh;
+}
+article {
+    width: 80%;
+    background-color: antiquewhite;
+    box-shadow: wheat 5px 5px 10px 0;
+    padding: 10px;
+    margin-bottom: 2.5vh;
+}
+article>h2 {
+    color: darkred;
+    font-size: 1.5em;
+}
+article>h3 {
+    color: darkblue;
+    font-size: 1.5em;
+}
+
+article>p, article>li {
+    font-size: 1.2em;
+}
+.espace {
+    height: 30vh; 
+}
+article>ul {
+    margin-left: 20px;
+}

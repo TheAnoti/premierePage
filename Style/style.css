@@ -18,10 +18,12 @@
     box-sizing: border-box;
 }
 header {
+    z-index: 10;/* plus le z-index est grand plus */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: fixed;
     width: 100vw;
     height: 25vh;
     background-color: darkblue;
@@ -39,15 +41,19 @@ header>h2{
     font-size: 3vh;
 }
 nav {
+    z-index: 9;
+    position: fixed;
+    top: 14vh;
     /*taille et apparence du nav (menu)*/
-    height: 75vh;
-    width: 25vh;
+    height: 95vh;
+    width: 20vw;
     background-color: black;
     /*reglage des bouton.*/
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+
 }
 .button {
     /*formatage du texte*/
@@ -56,15 +62,33 @@ nav {
     font-family:"londonpow";
     font-size: 4vh;
     display: block;
-    background-color: darkred;
+    background:linear-gradient(to left,rgb(3, 3, 252), rgb(38, 38, 252));
     border-radius: 0.5vh;
     padding: 0.5vh;
-    width: 15vh;
-    transition:box-shadow 800ms;
+    width: 18vh;
+    transition:800ms;
 }
 .button:hover {
     background-color: darkorchid;
-    transition: 800ms;
+    transition: 100ms;
     box-shadow: 5px 5px 10px 0;
     transform: translate3d(5px, 5px, 2px);
+}
+main {
+    position: relative;
+    top: 25vh;
+    left: 20vw;
+    width: 80vw;
+}
+footer {
+    position: fixed;
+    z-index: 10;
+    width: 80vw;
+    bottom: 0;
+    left: 20vw;
+    height: 10vh;
+    background-image: url("../Assets/Biolumfooters2.0.xcf");
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: ;
 }
