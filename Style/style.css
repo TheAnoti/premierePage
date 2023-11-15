@@ -82,13 +82,12 @@ main {
 }
 footer {
     position: fixed;
-    z-index: 10;
+    z-index: 11;
     width: 80vw;
     bottom: 0;
     left: 20vw;
     height: 10vh;
-    background-image: url("../Assets/Biolumfooters2.0.xcf");
+    background-image: url("../Assets/Biolum.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    align-items: ;
 }
